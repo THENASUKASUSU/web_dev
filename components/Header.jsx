@@ -42,9 +42,10 @@ function Header() {
               { label: 'Home', id: 'home' },
               { label: 'About', id: 'about' },
               { label: 'Skills', id: 'skills' },
+              { label: 'Education', id: 'education' },
               { label: 'Portfolio', id: 'portfolio' },
-              { label: 'Crypto Tool', id: 'crypto-tool' },
-              { label: 'Photo Editor', id: 'photo-editor' },
+              { label: 'Achievements', id: 'achievements' },
+              { label: 'Testimonials', id: 'testimonials' },
               { label: 'Contact', id: 'contact' }
             ].map((item) => (
               <button
@@ -75,16 +76,19 @@ function Header() {
 
         {/* Mobile Navigation */}
         <div className={`md:hidden transition-all duration-300 ${
-          isMobileMenuOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+          isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         } overflow-hidden`}>
           <nav className="py-4 space-y-4">
             {[
               { label: 'Home', id: 'home' },
               { label: 'About', id: 'about' },
               { label: 'Skills', id: 'skills' },
+              { label: 'Education', id: 'education' },
               { label: 'Portfolio', id: 'portfolio' },
+              { label: 'Achievements', id: 'achievements' },
               { label: 'Crypto Tool', id: 'crypto-tool' },
               { label: 'Photo Editor', id: 'photo-editor' },
+              { label: 'Testimonials', id: 'testimonials' },
               { label: 'Contact', id: 'contact' }
             ].map((item) => (
               <button

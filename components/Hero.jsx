@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function Hero() {
   const [text, setText] = useState('');
-  const fullText = 'Full Stack Developer';
+  const fullText = 'Full Stack Developer & Tech Innovator';
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -64,6 +64,14 @@ function Hero() {
             </div>
           </div>
 
+          {/* Personal Branding */}
+          <div className="mb-6">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-full text-sm font-medium text-gray-300">
+              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              Available for hire
+            </span>
+          </div>
+
           {/* Text Content */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm{' '}
@@ -79,14 +87,34 @@ function Hero() {
             </span>
           </div>
           
-          <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Passionate full stack developer specialized in creating modern, scalable applications. 
-            I transform ideas into powerful digital solutions using cutting-edge technologies, 
-            just like my feline coding companion! 🐾
+          <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Passionate full-stack developer with 4+ years of experience building scalable web applications. 
+            I specialize in React, Node.js, and cloud technologies, transforming complex ideas into elegant digital solutions. 
+            Currently based in Seattle, Washington. 🐾
           </p>
 
+          {/* Quick Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-2xl mx-auto">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-400 mb-1">60+</div>
+              <div className="text-sm text-gray-400">Projects Completed</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-purple-400 mb-1">4+</div>
+              <div className="text-sm text-gray-400">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-pink-400 mb-1">25+</div>
+              <div className="text-sm text-gray-400">Happy Clients</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-indigo-400 mb-1">15+</div>
+              <div className="text-sm text-gray-400">Tech Stack</div>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <button
               onClick={() => scrollToSection('portfolio')}
               className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
@@ -108,11 +136,11 @@ function Hero() {
             </button>
           </div>
 
-          {/* Fun Cat Quote */}
-          <div className="mt-12 p-6 bg-gray-800/30 backdrop-blur-sm rounded-2xl border border-gray-700 max-w-2xl mx-auto">
+          {/* Personal Motto */}
+          <div className="p-6 bg-gray-800/30 backdrop-blur-sm rounded-2xl border border-gray-700 max-w-2xl mx-auto">
             <p className="text-gray-300 italic flex items-center justify-center gap-3">
               <span className="text-2xl">💬</span>
-              "Coding with the focus of a cat and the curiosity of a kitten!"
+              "Code with the precision of a cat and the curiosity to never stop learning!"
               <span className="text-2xl">🐱</span>
             </p>
           </div>

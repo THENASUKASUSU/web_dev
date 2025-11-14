@@ -15,7 +15,10 @@ function App() {
         window.CryptoTool &&
         window.PhotoEditor &&
         window.Contact &&
-        window.Footer
+        window.Footer &&
+        window.Education &&
+        window.Testimonials &&
+        window.Achievements
       ) {
         setIsReady(true);
       }
@@ -68,9 +71,12 @@ function App() {
         <window.Hero />
         <window.About />
         <window.Skills />
+        <window.Education />
         <window.Portfolio />
+        <window.Achievements />
         <window.CryptoTool />
         <window.PhotoEditor />
+        <window.Testimonials />
         <window.Contact />
         <window.Footer />
       </div>
